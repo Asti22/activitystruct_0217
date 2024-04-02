@@ -24,14 +24,16 @@ int main(){
         getline(cin,mhs[i].nama);
         cout <<"Alamat Mahasiswa:";
         cout << "\t nama Desa:";
-        cin >> mhs.alamat.desa;
+        cin >> mhs[i].alamat.desa;
         cout <<"\t nama Kota:";
-        cin >> mhs.alamat.kota;
+        cin >> mhs[i].alamat.kota;
 
         cout <<"Umur Mahasiswa:";
-        cin>> mhs.umur;
+        cin>> mhs[i].umur;
     }
     for (int i=0;i<3;i++){
+        cout <<endl;
+        cout <<"Data Mahasiswa ke-"<<(i=1)<<":"<<endl;
        cout <<endl;
        cout <<"\n Nim:"<<mhs.nim;
        cout <<"\n Nama:" <<mhs.nama;
